@@ -3,3 +3,164 @@
   padding: 0;
   list-style: none;
 }
+
+
+body {
+  background: #f5f3ee;
+  color: #4e342e;
+  font-family: 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, footer {
+  background: #795548;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+a {
+  color: #8d6e63;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #4e342e;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  color: #6d4c41;
+  font-weight: 700;
+}
+
+.container {
+  background: #fff8f0;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(125, 105, 85, 0.08);
+  max-width: 900px;
+}
+
+button, .btn {
+  background: #a1887f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: #6d4c41;
+}
+
+input, select, textarea {
+  border: 1px solid #bcaaa4;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background: #f5f3ee;
+  color: #4e342e;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #bcaaa4;
+  margin: 2rem 0;
+}
+
+/* カード風ボックスの影を強調 */
+.container {
+  background: #fff8f0;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(125, 105, 85, 0.15);
+  max-width: 900px;
+}
+
+/* ヘッダーにグラデーションを追加 */
+header, nav, footer {
+  background: linear-gradient(90deg, #795548 60%, #a1887f 100%);
+  color: #fff;
+  padding: 1.2rem 2.5rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(125, 105, 85, 0.08);
+}
+
+/* サイドバーやナビゲーションの装飾 */
+.sidebar-nav {
+  background: #efebe9;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(125, 105, 85, 0.07);
+}
+
+/* テーブル装飾 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+th, td {
+  border: 1px solid #d7ccc8;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+th {
+  background: #d7ccc8;
+  color: #4e342e;
+}
+
+/* フォームラベルの強調 */
+label {
+  font-weight: bold;
+  color: #6d4c41;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+/* フォームのエラー表示 */
+.error {
+  color: #b71c1c;
+  background: #ffebee;
+  border-left: 4px solid #b71c1c;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+/* ボタンに影とアニメーション */
+button, .btn {
+  box-shadow: 0 2px 8px rgba(125, 105, 85, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+button:hover, .btn:hover {
+  background: #6d4c41;
+  box-shadow: 0 4px 16px rgba(125, 105, 85, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* セクション間の余白 */
+section {
+  margin-bottom: 2.5rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  header, nav, footer {
+    padding: 0.7rem 1rem;
+  }
+  th, td {
+    padding: 0.5rem 0.5rem;
+  }
+}
+

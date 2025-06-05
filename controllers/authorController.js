@@ -8,7 +8,7 @@ const asyncHandler = require("express-async-handler");
 exports.author_list = asyncHandler(async (req, res, next) => {
   const allAuthors = await Author.find().sort({ family_name: 1 }).exec();
   res.render("author_list", {
-    title: "Author List",
+    title: "著者一覧",
     author_list: allAuthors,
   });
 });
@@ -37,7 +37,7 @@ exports.author_detail = asyncHandler(async (req, res, next) => {
 
 // Display Author create form on GET.
 exports.author_create_get = (req, res, next) => {
-  res.render("author_form", { title: "Create Author" });
+  res.render("author_form", { title: "新しい著者の作成" });
 };
 
 // Handle Author create on POST.
@@ -82,7 +82,7 @@ exports.author_create_post = [
     if (!errors.isEmpty()) {
       // There are errors. Render form again with sanitized values/errors messages.
       res.render("author_form", {
-        title: "Create Author",
+        title: "新しい著者の作成",
         author: author,
         errors: errors.array(),
       });
